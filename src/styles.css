@@ -142,3 +142,33 @@
     color: var(--color-foreground);
   }
 }
+
+/* ---- Horizon Exchange design tokens ---- */
+@theme {
+  --color-ink: #1f2933;
+  --color-ink-muted: #647080;
+  --color-mist: #eef2f6;
+  --color-sky: #1c64d6;
+  --color-sky-soft: #eaf1fd;
+  --color-amber: #c97a12;
+  --color-amber-soft: #fbf0dd;
+  --color-pine: #1f7a4d;
+  --color-pine-soft: #e6f4ec;
+  --color-line: #e7ebf0;
+  --color-canvas: #f6f8fb;
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@keyframes hx-fade-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+@utility fade-up {
+  animation: hx-fade-up 0.5s ease both;
+}
+
+@utility bar-fill {
+  transition: width 0.9s cubic-bezier(0.32, 0.72, 0, 1);
+}
